@@ -12,7 +12,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public final class Main {
-
     public static void main(String[] args) {
         int result = PMD.run(args);
 
@@ -26,8 +25,8 @@ public final class Main {
     private static void printError(String[] args) {
         List<String> arguments = Arrays.asList(args);
 
-        String reportFormat = argument(arguments, "-format");
-        String reportFilePath = argument(arguments, "-reportfile");
+        String reportFormat = argument(arguments, "--format");
+        String reportFilePath = argument(arguments, "--report-file");
 
         if (reportFormat != null && reportFilePath != null) {
             if (Arrays.asList(TextRenderer.NAME, TextColorRenderer.NAME, TextPadRenderer.NAME).contains(reportFormat)) {

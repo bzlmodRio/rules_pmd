@@ -1,2 +1,4 @@
-# Bazel
-/bazel-*
+bazel-*
+*.pyc
+user.bazelrc
+.DS_Store
