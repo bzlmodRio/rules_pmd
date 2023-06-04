@@ -90,10 +90,24 @@ _report_format_extensions = {
 pmd = rule(
     implementation = _impl,
     attrs = {
-        "_executable": attr.label(
-            default = "//pmd/wrapper",
-            executable = True,
-            cfg = "exec",
+        "fail_on_violation": attr.bool(
+            default = True,
+            doc = "See [PMD `-failOnViolation` option](https://pmd.github.io/latest/pmd_userdocs_cli_reference.html)",
+        ),
+        "report_format": attr.string(
+            default = "text",
+            values = ["codeclimate", "csv", "json", "html", "summaryhtml", "text", "textcolor", "textpad", "xml"],
+            doc = "See [PMD `-format` option](https://pmd.github.io/latest/pmd_userdocs_cli_reference.html)",
+        ),
+        "rules_minimum_priority": attr.int(
+            default = 5,
+            doc = "See [PMD `-minimumpriority` option](https://pmd.github.io/latest/pmd_userdocs_cli_reference.html)",
+        ),
+        "rulesets": attr.label_list(
+            allow_files = True,
+            mandatory = True,
+            allow_empty = False,
+            doc = "Ruleset files.",
         ),
         "srcs": attr.label_list(
             allow_files = True,
@@ -101,14 +115,14 @@ pmd = rule(
             mandatory = True,
             allow_empty = False,
         ),
+        "srcs_encoding": attr.string(
+            default = "UTF-8",
+            doc = "See [PMD `-encoding` option](https://pmd.github.io/latest/pmd_userdocs_cli_reference.html)",
+        ),
         "srcs_ignore": attr.label_list(
             allow_files = True,
             default = [],
             doc = "Source code files to ignore.",
-        ),
-        "srcs_encoding": attr.string(
-            default = "UTF-8",
-            doc = "See [PMD `-encoding` option](https://pmd.github.io/latest/pmd_userdocs_cli_reference.html)",
         ),
         "srcs_language": attr.string(
             default = "java",
@@ -118,28 +132,14 @@ pmd = rule(
         "srcs_language_version": attr.string(
             doc = "See [PMD `-version` option](https://pmd.github.io/latest/pmd_userdocs_cli_reference.html)",
         ),
-        "rulesets": attr.label_list(
-            allow_files = True,
-            mandatory = True,
-            allow_empty = False,
-            doc = "Ruleset files.",
-        ),
-        "rules_minimum_priority": attr.int(
-            default = 5,
-            doc = "See [PMD `-minimumpriority` option](https://pmd.github.io/latest/pmd_userdocs_cli_reference.html)",
-        ),
-        "report_format": attr.string(
-            default = "text",
-            values = ["codeclimate", "csv", "json", "html", "summaryhtml", "text", "textcolor", "textpad", "xml"],
-            doc = "See [PMD `-format` option](https://pmd.github.io/latest/pmd_userdocs_cli_reference.html)",
-        ),
-        "fail_on_violation": attr.bool(
-            default = True,
-            doc = "See [PMD `-failOnViolation` option](https://pmd.github.io/latest/pmd_userdocs_cli_reference.html)",
-        ),
         "threads_count": attr.int(
             default = 1,
             doc = "See [PMD `-threads` option](https://pmd.github.io/latest/pmd_userdocs_cli_reference.html)",
+        ),
+        "_executable": attr.label(
+            default = "//pmd/wrapper",
+            executable = True,
+            cfg = "exec",
         ),
     },
     provides = [DefaultInfo],
