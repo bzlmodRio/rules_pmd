@@ -2,7 +2,7 @@ from bazelrio_gentool.generate_styleguide_rule import StyleguideGroup
 
 
 def get_pmd_group():
-    version = "6.43.0"
+    version = "6.55.0"
 
     group = StyleguideGroup(
         short_name="pmd",
