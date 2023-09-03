@@ -13,7 +13,7 @@ import java.util.List;
 
 public final class Main {
     public static void main(String[] args) {
-        int result = PMD.run(args);
+        int result = PMD.runPmd(args).toInt();
 
         if (result != 0) {
             printError(args);

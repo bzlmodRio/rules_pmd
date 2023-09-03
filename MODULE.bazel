@@ -1,6 +1,6 @@
 module(
     name = "rules_pmd",
-    version = "6.55.0",
+    version = "6.43.0",
     compatibility_level = 1,
 )
 
@@ -11,8 +11,8 @@ maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
     name = "rules_pmd_dependencies",
     artifacts = [
-        "net.sourceforge.pmd:pmd-core:6.55.0",
-        "net.sourceforge.pmd:pmd-dist:6.55.0",
+        "net.sourceforge.pmd:pmd-core:6.43.0",
+        "net.sourceforge.pmd:pmd-dist:6.43.0",
     ],
     lock_file = "@rules_pmd//:rules_pmd_dependencies_install.json",
     repositories = [
