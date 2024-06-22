@@ -6,8 +6,8 @@ def load_pmd_dependencies():
     maven_install(
         name = "rules_pmd_dependencies",
         artifacts = [
-            "net.sourceforge.pmd:pmd-core:6.43.0",
-            "net.sourceforge.pmd:pmd-dist:6.43.0",
+            "net.sourceforge.pmd:pmd-core:7.2.0",
+            "net.sourceforge.pmd:pmd-dist:7.2.0",
         ],
         repositories = [
             "https://repo1.maven.org/maven2",

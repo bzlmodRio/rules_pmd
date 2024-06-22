@@ -1,9 +1,13 @@
 package io.buildfoundation.bazel.pmd;
 
-import net.sourceforge.pmd.PMD;
+import net.sourceforge.pmd.cli.PmdCli;
 import net.sourceforge.pmd.renderers.TextColorRenderer;
 import net.sourceforge.pmd.renderers.TextPadRenderer;
 import net.sourceforge.pmd.renderers.TextRenderer;
+
+import net.sourceforge.pmd.cli.commands.internal.PmdRootCommand;
+
+import picocli.CommandLine;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -13,7 +17,11 @@ import java.util.List;
 
 public final class Main {
     public static void main(String[] args) {
-        int result = PMD.runPmd(args).toInt();
+        System.setProperty("picocli.disable.closures", "true");
+        final CommandLine cli = new CommandLine(new PmdRootCommand())
+                .setCaseInsensitiveEnumValuesAllowed(true);
+
+        int result = cli.execute(args);
 
         if (result != 0) {
             printError(args);
