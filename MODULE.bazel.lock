@@ -125,7 +125,7 @@
     "@@rules_jvm_external~//:extensions.bzl%maven": {
       "general": {
         "bzlTransitiveDigest": "Pq3YnJEflPAALx/UMykUnN3aA5bve0fNm/cuLvt/zvI=",
-        "usagesDigest": "nN5KuSZWvKHKI+5Ggq2NrtqCbAKMhU6HGnjOXMvhxPk=",
+        "usagesDigest": "gsF3vieGI+uLPxvI28mOKyruNyPf3kgOnveCGi4/E/M=",
         "recordedFileInputs": {
           "@@//rules_pmd_dependencies_install.json": "de85222340b1a228f83a8183a1d2313e5589d040248390ca82c81f0f7b3a83f9",
           "@@rules_jvm_external~//rules_jvm_external_deps_install.json": "0bfbc915d9155df44d7a3b216e8f3c1fbcd110e358dd07637dc393583a5227e8"
@@ -1462,8 +1462,8 @@
               ],
               "boms": [],
               "artifacts": [
-                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-core\", \"version\": \"6.43.0\" }",
-                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-dist\", \"version\": \"6.43.0\" }"
+                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-core\", \"version\": \"7.2.0\" }",
+                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-dist\", \"version\": \"7.2.0\" }"
               ],
               "fetch_sources": false,
               "fetch_javadoc": false,
@@ -2961,8 +2961,8 @@
                 "{ \"repo_url\": \"https://repo.maven.apache.org/maven2/\" }"
               ],
               "artifacts": [
-                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-core\", \"version\": \"6.43.0\" }",
-                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-dist\", \"version\": \"6.43.0\" }"
+                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-core\", \"version\": \"7.2.0\" }",
+                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-dist\", \"version\": \"7.2.0\" }"
               ],
               "fail_on_missing_checksum": true,
               "fetch_sources": false,
