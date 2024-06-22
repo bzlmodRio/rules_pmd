@@ -17,8 +17,8 @@ def get_pmd_group():
         group_id="Placeholder",
         parent_folder="Placeholder",
         maven_deps=[
-            ("net.sourceforge.pmd:pmd-core", version),
-            ("net.sourceforge.pmd:pmd-dist", version),
+            ("net.sourceforge.pmd:pmd-java", version),
+            ("net.sourceforge.pmd:pmd-cli", version),
         ],
     )
     return group
