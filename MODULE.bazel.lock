@@ -125,9 +125,9 @@
     "@@rules_jvm_external~//:extensions.bzl%maven": {
       "general": {
         "bzlTransitiveDigest": "Pq3YnJEflPAALx/UMykUnN3aA5bve0fNm/cuLvt/zvI=",
-        "usagesDigest": "gsF3vieGI+uLPxvI28mOKyruNyPf3kgOnveCGi4/E/M=",
+        "usagesDigest": "oeldUiOK+qEYoIDkYJMRJbtYULqJq+Niu0AsubNtBPQ=",
         "recordedFileInputs": {
-          "@@//rules_pmd_dependencies_install.json": "de85222340b1a228f83a8183a1d2313e5589d040248390ca82c81f0f7b3a83f9",
+          "@@//rules_pmd_dependencies_install.json": "5662c6f937817948b5175a037c19cd217d210d344181d27ddbb7f29b30e5bf65",
           "@@rules_jvm_external~//rules_jvm_external_deps_install.json": "0bfbc915d9155df44d7a3b216e8f3c1fbcd110e358dd07637dc393583a5227e8"
         },
         "recordedDirentsInputs": {},
@@ -221,18 +221,6 @@
               "downloaded_file_path": "v1/com/google/googlejavaformat/google-java-format/1.22.0/google-java-format-1.22.0-sources.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_core_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "bd08ed7b18e4491960949390b460f218a26e3e22f0c4d4af71a6d298366391b9",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-core/6.43.0/pmd-core-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-core/6.43.0/pmd-core-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-core/6.43.0/pmd-core-6.43.0.jar"
-            }
-          },
           "io_grpc_grpc_rls_jar_sources_1_62_2": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -297,6 +285,18 @@
                 "https://repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/2.0.12/log4j-over-slf4j-2.0.12.jar"
               ],
               "downloaded_file_path": "v1/org/slf4j/log4j-over-slf4j/2.0.12/log4j-over-slf4j-2.0.12.jar"
+            }
+          },
+          "org_xmlresolver_xmlresolver_jar_data_5_2_2": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "173904bdbd783ba0fac92c5bcc05da5d09f0ce7eed24346666ea0a239461f9b4",
+              "urls": [
+                "https://repo1.maven.org/maven2/org/xmlresolver/xmlresolver/5.2.2/xmlresolver-5.2.2-data.jar",
+                "https://repo.maven.apache.org/maven2/org/xmlresolver/xmlresolver/5.2.2/xmlresolver-5.2.2-data.jar"
+              ],
+              "downloaded_file_path": "v1/org/xmlresolver/xmlresolver/5.2.2/xmlresolver-5.2.2-data.jar"
             }
           },
           "software_amazon_awssdk_checksums_2_25_23": {
@@ -385,18 +385,6 @@
                 "https://repo1.maven.org/maven2/org/apache/maven/resolver/maven-resolver-transport-file/1.9.18/maven-resolver-transport-file-1.9.18-sources.jar"
               ],
               "downloaded_file_path": "v1/org/apache/maven/resolver/maven-resolver-transport-file/1.9.18/maven-resolver-transport-file-1.9.18-sources.jar"
-            }
-          },
-          "net_sourceforge_pmd_pmd_lua_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "4d43732581bd24117f487be51f3469a08970659d09d55c8506cc476a7b55540a",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-lua/6.43.0/pmd-lua-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-lua/6.43.0/pmd-lua-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-lua/6.43.0/pmd-lua-6.43.0.jar"
             }
           },
           "software_amazon_awssdk_http_auth_spi_jar_sources_2_25_23": {
@@ -537,7 +525,8 @@
             "attributes": {
               "sha256": "4241c14a7727c34feea6507ec801318a3d4a90f070e4525681079fb94ee4c593",
               "urls": [
-                "https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar"
+                "https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar",
+                "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar"
               ],
               "downloaded_file_path": "v1/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar"
             }
@@ -756,16 +745,16 @@
               "downloaded_file_path": "v1/software/amazon/awssdk/s3/2.25.23/s3-2.25.23.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_java_6_43_0": {
+          "org_apache_httpcomponents_client5_httpclient5_5_1_3": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "2d82e44ae3d96816c97bee80305250b5795b788b8cf12b747ab8bb113c66e675",
+              "sha256": "28c759254f4e35319e078bb6ffea75676608dc12cb243b24fb3c8732522977fe",
               "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-java/6.43.0/pmd-java-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-java/6.43.0/pmd-java-6.43.0.jar"
+                "https://repo1.maven.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar",
+                "https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar"
               ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-java/6.43.0/pmd-java-6.43.0.jar"
+              "downloaded_file_path": "v1/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar"
             }
           },
           "org_checkerframework_checker_qual_3_42_0": {
@@ -788,6 +777,18 @@
                 "https://repo1.maven.org/maven2/software/amazon/awssdk/profiles/2.25.23/profiles-2.25.23-sources.jar"
               ],
               "downloaded_file_path": "v1/software/amazon/awssdk/profiles/2.25.23/profiles-2.25.23-sources.jar"
+            }
+          },
+          "org_ow2_asm_asm_9_6": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "3c6fac2424db3d4a853b669f4e3d1d9c3c552235e19a319673f887083c2303a1",
+              "urls": [
+                "https://repo1.maven.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.jar",
+                "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.jar"
+              ],
+              "downloaded_file_path": "v1/org/ow2/asm/asm/9.6/asm-9.6.jar"
             }
           },
           "io_grpc_grpc_protobuf_1_62_2": {
@@ -834,18 +835,6 @@
               "downloaded_file_path": "v1/software/amazon/awssdk/apache-client/2.25.23/apache-client-2.25.23.jar"
             }
           },
-          "org_ow2_asm_asm_9_2": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "b9d4fe4d71938df38839f0eca42aaaa64cf8b313d678da036f0cb3ca199b47f5",
-              "urls": [
-                "https://repo1.maven.org/maven2/org/ow2/asm/asm/9.2/asm-9.2.jar",
-                "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.2/asm-9.2.jar"
-              ],
-              "downloaded_file_path": "v1/org/ow2/asm/asm/9.2/asm-9.2.jar"
-            }
-          },
           "org_apache_maven_resolver_maven_resolver_impl_1_9_18": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -877,18 +866,6 @@
                 "https://repo1.maven.org/maven2/org/apache/maven/resolver/maven-resolver-named-locks/1.9.18/maven-resolver-named-locks-1.9.18.jar"
               ],
               "downloaded_file_path": "v1/org/apache/maven/resolver/maven-resolver-named-locks/1.9.18/maven-resolver-named-locks-1.9.18.jar"
-            }
-          },
-          "net_sourceforge_pmd_pmd_jsp_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "e7f13ccef6969ed94fa249186d4fcb8657fa887e2a339698a479129b8835ea44",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-jsp/6.43.0/pmd-jsp-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-jsp/6.43.0/pmd-jsp-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-jsp/6.43.0/pmd-jsp-6.43.0.jar"
             }
           },
           "io_netty_netty_handler_jar_sources_4_1_108_Final": {
@@ -1045,18 +1022,6 @@
               "downloaded_file_path": "v1/com/google/cloud/google-cloud-storage/2.36.1/google-cloud-storage-2.36.1-sources.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_go_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "ce891edf831957f33fae90b584cd1f579a494b644a1ecfb5029f70a9964f74b0",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-go/6.43.0/pmd-go-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-go/6.43.0/pmd-go-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-go/6.43.0/pmd-go-6.43.0.jar"
-            }
-          },
           "io_grpc_grpc_grpclb_1_62_2": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -1156,6 +1121,18 @@
               "downloaded_file_path": "v1/software/amazon/awssdk/aws-query-protocol/2.25.23/aws-query-protocol-2.25.23-sources.jar"
             }
           },
+          "net_sf_saxon_Saxon_HE_12_4": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "575f8b696e3b6f9aa7a3bf01611b8bf1b84576b55ce29bc16656a53a147ef441",
+              "urls": [
+                "https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/12.4/Saxon-HE-12.4.jar",
+                "https://repo.maven.apache.org/maven2/net/sf/saxon/Saxon-HE/12.4/Saxon-HE-12.4.jar"
+              ],
+              "downloaded_file_path": "v1/net/sf/saxon/Saxon-HE/12.4/Saxon-HE-12.4.jar"
+            }
+          },
           "com_google_re2j_re2j_1_7": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -1176,18 +1153,6 @@
                 "https://repo1.maven.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18-sources.jar"
               ],
               "downloaded_file_path": "v1/org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18-sources.jar"
-            }
-          },
-          "com_beust_jcommander_1_48": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "a7313fcfde070930e40ec79edf3c5948cf34e4f0d25cb3a09f9963d8bdd84113",
-              "urls": [
-                "https://repo1.maven.org/maven2/com/beust/jcommander/1.48/jcommander-1.48.jar",
-                "https://repo.maven.apache.org/maven2/com/beust/jcommander/1.48/jcommander-1.48.jar"
-              ],
-              "downloaded_file_path": "v1/com/beust/jcommander/1.48/jcommander-1.48.jar"
             }
           },
           "io_netty_netty_common_4_1_108_Final": {
@@ -1223,18 +1188,6 @@
               "downloaded_file_path": "v1/com/google/code/gson/gson/2.10.1/gson-2.10.1-sources.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_objectivec_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "778f0dee652e4d2fab902bfe3faa00b2ec880922091251945519ad66777225da",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-objectivec/6.43.0/pmd-objectivec-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-objectivec/6.43.0/pmd-objectivec-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-objectivec/6.43.0/pmd-objectivec-6.43.0.jar"
-            }
-          },
           "javax_annotation_javax_annotation_api_1_3_2": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -1266,18 +1219,6 @@
                 "https://repo1.maven.org/maven2/com/google/auto/value/auto-value-annotations/1.10.4/auto-value-annotations-1.10.4.jar"
               ],
               "downloaded_file_path": "v1/com/google/auto/value/auto-value-annotations/1.10.4/auto-value-annotations-1.10.4.jar"
-            }
-          },
-          "net_sourceforge_pmd_pmd_dist_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "68220cfb3d76c5680ca6899b622632574706815a3da88afce1ca0c46a4a54c6e",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-dist/6.43.0/pmd-dist-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-dist/6.43.0/pmd-dist-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-dist/6.43.0/pmd-dist-6.43.0.jar"
             }
           },
           "software_amazon_awssdk_annotations_2_25_23": {
@@ -1383,16 +1324,16 @@
               "repin_instructions": ""
             }
           },
-          "net_sourceforge_pmd_pmd_cpp_6_43_0": {
+          "org_apache_commons_commons_lang3_3_14_0": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "3c31b3197301f2452a0905e67dc76091a76b000cf5019b99c7a226b70bac7a42",
+              "sha256": "7b96bf3ee68949abb5bc465559ac270e0551596fa34523fddf890ec418dde13c",
               "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-cpp/6.43.0/pmd-cpp-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-cpp/6.43.0/pmd-cpp-6.43.0.jar"
+                "https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar",
+                "https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar"
               ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-cpp/6.43.0/pmd-cpp-6.43.0.jar"
+              "downloaded_file_path": "v1/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar"
             }
           },
           "com_google_http_client_google_http_client_appengine_jar_sources_1_44_1": {
@@ -1428,18 +1369,6 @@
               "downloaded_file_path": "v1/io/opentelemetry/opentelemetry-api/1.36.0/opentelemetry-api-1.36.0.jar"
             }
           },
-          "com_google_code_gson_gson_2_8_9": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "d3999291855de495c94c743761b8ab5176cfeabe281a5ab0d8e8d45326fd703e",
-              "urls": [
-                "https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
-                "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar"
-              ],
-              "downloaded_file_path": "v1/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar"
-            }
-          },
           "software_amazon_awssdk_endpoints_spi_jar_sources_2_25_23": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -1462,8 +1391,8 @@
               ],
               "boms": [],
               "artifacts": [
-                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-core\", \"version\": \"7.2.0\" }",
-                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-dist\", \"version\": \"7.2.0\" }"
+                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-java\", \"version\": \"7.2.0\" }",
+                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-cli\", \"version\": \"7.2.0\" }"
               ],
               "fetch_sources": false,
               "fetch_javadoc": false,
@@ -1829,6 +1758,18 @@
               "downloaded_file_path": "v1/software/amazon/awssdk/metrics-spi/2.25.23/metrics-spi-2.25.23.jar"
             }
           },
+          "org_slf4j_jul_to_slf4j_1_7_36": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "9e641fb142c5f0b0623d6222c09ea87523a41bf6bed48ac79940724010b989de",
+              "urls": [
+                "https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar",
+                "https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar"
+              ],
+              "downloaded_file_path": "v1/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar"
+            }
+          },
           "org_apache_commons_commons_lang3_jar_sources_3_12_0": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -1860,6 +1801,18 @@
                 "https://repo1.maven.org/maven2/com/google/api/gax/2.46.1/gax-2.46.1.jar"
               ],
               "downloaded_file_path": "v1/com/google/api/gax/2.46.1/gax-2.46.1.jar"
+            }
+          },
+          "com_github_oowekyala_ooxml_nice_xml_messages_3_1": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "0b4ceb5b8362d43c9c6c49b1bd57f1c5da54d3c5c7c305fa39c0a04462bb4799",
+              "urls": [
+                "https://repo1.maven.org/maven2/com/github/oowekyala/ooxml/nice-xml-messages/3.1/nice-xml-messages-3.1.jar",
+                "https://repo.maven.apache.org/maven2/com/github/oowekyala/ooxml/nice-xml-messages/3.1/nice-xml-messages-3.1.jar"
+              ],
+              "downloaded_file_path": "v1/com/github/oowekyala/ooxml/nice-xml-messages/3.1/nice-xml-messages-3.1.jar"
             }
           },
           "com_google_api_api_common_jar_sources_2_29_1": {
@@ -2104,18 +2057,6 @@
               "downloaded_file_path": "v1/software/amazon/awssdk/http-auth/2.25.23/http-auth-2.25.23.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_php_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "e2d43d065bafd8c70a4b3a0c22227777896687339fc48f1ea64a2f0d93f1e370",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-php/6.43.0/pmd-php-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-php/6.43.0/pmd-php-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-php/6.43.0/pmd-php-6.43.0.jar"
-            }
-          },
           "com_google_re2j_re2j_jar_sources_1_7": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -2204,18 +2145,6 @@
               "downloaded_file_path": "v1/org/apache/maven/maven-model/3.9.6/maven-model-3.9.6-sources.jar"
             }
           },
-          "org_codehaus_groovy_groovy_2_4_21": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "cc637a03e8ffddd487177bed948f162200a08f4847089091e06d70c2a1480fee",
-              "urls": [
-                "https://repo1.maven.org/maven2/org/codehaus/groovy/groovy/2.4.21/groovy-2.4.21.jar",
-                "https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/2.4.21/groovy-2.4.21.jar"
-              ],
-              "downloaded_file_path": "v1/org/codehaus/groovy/groovy/2.4.21/groovy-2.4.21.jar"
-            }
-          },
           "org_eclipse_sisu_org_eclipse_sisu_inject_0_9_0_M2": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -2271,18 +2200,6 @@
               "downloaded_file_path": "v1/software/amazon/eventstream/eventstream/1.0.1/eventstream-1.0.1-sources.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_kotlin_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "155d43ac6f64cefa864b56de6e2583f56f41359041a6e377bd6b5ed54a826aa7",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-kotlin/6.43.0/pmd-kotlin-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-kotlin/6.43.0/pmd-kotlin-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-kotlin/6.43.0/pmd-kotlin-6.43.0.jar"
-            }
-          },
           "io_grpc_grpc_alts_jar_sources_1_62_2": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -2327,18 +2244,6 @@
               "downloaded_file_path": "v1/io/grpc/grpc-protobuf/1.62.2/grpc-protobuf-1.62.2-sources.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_modelica_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "d0087a25ce2040b6be657fd61f37a0663f30ed291f017886527e0ffc141f533f",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-modelica/6.43.0/pmd-modelica-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-modelica/6.43.0/pmd-modelica-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-modelica/6.43.0/pmd-modelica-6.43.0.jar"
-            }
-          },
           "io_netty_netty_transport_classes_epoll_jar_sources_4_1_108_Final": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -2350,6 +2255,18 @@
               "downloaded_file_path": "v1/io/netty/netty-transport-classes-epoll/4.1.108.Final/netty-transport-classes-epoll-4.1.108.Final-sources.jar"
             }
           },
+          "org_apache_httpcomponents_core5_httpcore5_5_1_3": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "f2bf2f2c7772169c9e30699719667ad30f9b46c4e9d7841907deb2d12d9923fe",
+              "urls": [
+                "https://repo1.maven.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar",
+                "https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar"
+              ],
+              "downloaded_file_path": "v1/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar"
+            }
+          },
           "io_grpc_grpc_googleapis_1_62_2": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -2359,18 +2276,6 @@
                 "https://repo1.maven.org/maven2/io/grpc/grpc-googleapis/1.62.2/grpc-googleapis-1.62.2.jar"
               ],
               "downloaded_file_path": "v1/io/grpc/grpc-googleapis/1.62.2/grpc-googleapis-1.62.2.jar"
-            }
-          },
-          "net_sourceforge_pmd_pmd_dart_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "88ae21e0024b410b6df81dded5778041e76f6b7d22d0aa93137b8501bfa58913",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-dart/6.43.0/pmd-dart-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-dart/6.43.0/pmd-dart-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-dart/6.43.0/pmd-dart-6.43.0.jar"
             }
           },
           "com_google_protobuf_protobuf_java_3_25_2": {
@@ -2428,18 +2333,6 @@
               "downloaded_file_path": "v1/software/amazon/awssdk/checksums-spi/2.25.23/checksums-spi-2.25.23-sources.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_xml_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "6aa5d5110c3fb3766a3d876c780e184f3c50baf815972caefe097c26537ab58f",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-xml/6.43.0/pmd-xml-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-xml/6.43.0/pmd-xml-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-xml/6.43.0/pmd-xml-6.43.0.jar"
-            }
-          },
           "com_google_errorprone_error_prone_annotations_jar_sources_2_26_1": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -2460,18 +2353,6 @@
                 "https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.23/animal-sniffer-annotations-1.23.jar"
               ],
               "downloaded_file_path": "v1/org/codehaus/mojo/animal-sniffer-annotations/1.23/animal-sniffer-annotations-1.23.jar"
-            }
-          },
-          "org_antlr_antlr4_runtime_4_7_2": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "4c518b87d4bdff8b44cd8cbc1af816e944b62a3fe5b80b781501cf1f4759bbc4",
-              "urls": [
-                "https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar",
-                "https://repo.maven.apache.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar"
-              ],
-              "downloaded_file_path": "v1/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar"
             }
           },
           "com_google_api_grpc_grpc_google_cloud_storage_v2_jar_sources_2_36_1_alpha": {
@@ -2562,6 +2443,18 @@
               "downloaded_file_path": "v1/io/grpc/grpc-stub/1.62.2/grpc-stub-1.62.2.jar"
             }
           },
+          "org_pcollections_pcollections_3_2_0": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "6c1447309cd47560924dbf4939b37756c53b15febc0191ec52d6e0b53b6cc62a",
+              "urls": [
+                "https://repo1.maven.org/maven2/org/pcollections/pcollections/3.2.0/pcollections-3.2.0.jar",
+                "https://repo.maven.apache.org/maven2/org/pcollections/pcollections/3.2.0/pcollections-3.2.0.jar"
+              ],
+              "downloaded_file_path": "v1/org/pcollections/pcollections/3.2.0/pcollections-3.2.0.jar"
+            }
+          },
           "com_google_j2objc_j2objc_annotations_jar_sources_3_0_0": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -2650,18 +2543,6 @@
               "downloaded_file_path": "v1/com/google/cloud/google-cloud-core-http/2.36.1/google-cloud-core-http-2.36.1-sources.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_perl_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "7f9a4c08c3101c1b9c16d871b89551d3ba04f14a077c60b2190746d1a12dd332",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-perl/6.43.0/pmd-perl-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-perl/6.43.0/pmd-perl-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-perl/6.43.0/pmd-perl-6.43.0.jar"
-            }
-          },
           "com_google_api_grpc_gapic_google_cloud_storage_v2_2_36_1_alpha": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -2671,18 +2552,6 @@
                 "https://repo1.maven.org/maven2/com/google/api/grpc/gapic-google-cloud-storage-v2/2.36.1-alpha/gapic-google-cloud-storage-v2-2.36.1-alpha.jar"
               ],
               "downloaded_file_path": "v1/com/google/api/grpc/gapic-google-cloud-storage-v2/2.36.1-alpha/gapic-google-cloud-storage-v2-2.36.1-alpha.jar"
-            }
-          },
-          "net_sourceforge_pmd_pmd_python_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "298fa68416c1657278fe655120453e9b1e7710550f4f80215eaa964168f05b97",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-python/6.43.0/pmd-python-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-python/6.43.0/pmd-python-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-python/6.43.0/pmd-python-6.43.0.jar"
             }
           },
           "software_amazon_awssdk_checksums_spi_2_25_23": {
@@ -2716,18 +2585,6 @@
                 "https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/2.0.12/jul-to-slf4j-2.0.12.jar"
               ],
               "downloaded_file_path": "v1/org/slf4j/jul-to-slf4j/2.0.12/jul-to-slf4j-2.0.12.jar"
-            }
-          },
-          "net_sourceforge_saxon_saxon_jar_dom_9_1_0_8": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "c6cf3ecc7f4b65ab8b613d00fd9e9c0648a5aa03264a941ba0fd2da5339f917a",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8-dom.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8-dom.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8-dom.jar"
             }
           },
           "org_slf4j_slf4j_simple_jar_sources_2_0_12": {
@@ -2873,6 +2730,18 @@
               "downloaded_file_path": "v1/software/amazon/awssdk/http-auth-aws/2.25.23/http-auth-aws-2.25.23.jar"
             }
           },
+          "net_sourceforge_pmd_pmd_core_7_2_0": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "3896a043e28dfcf06e59cdc7760b938eb72fc574bb955b82227b2f9019733e68",
+              "urls": [
+                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-core/7.2.0/pmd-core-7.2.0.jar",
+                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-core/7.2.0/pmd-core-7.2.0.jar"
+              ],
+              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-core/7.2.0/pmd-core-7.2.0.jar"
+            }
+          },
           "io_grpc_grpc_googleapis_jar_sources_1_62_2": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -2917,18 +2786,6 @@
               "downloaded_file_path": "v1/software/amazon/awssdk/arns/2.25.23/arns-2.25.23.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_cs_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "5fb46476f4b9b9ffb3c2832bfa77ce5bb88506b54e2350a0faf454d93760173a",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-cs/6.43.0/pmd-cs-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-cs/6.43.0/pmd-cs-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-cs/6.43.0/pmd-cs-6.43.0.jar"
-            }
-          },
           "io_netty_netty_codec_http2_4_1_108_Final": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -2961,8 +2818,8 @@
                 "{ \"repo_url\": \"https://repo.maven.apache.org/maven2/\" }"
               ],
               "artifacts": [
-                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-core\", \"version\": \"7.2.0\" }",
-                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-dist\", \"version\": \"7.2.0\" }"
+                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-java\", \"version\": \"7.2.0\" }",
+                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-cli\", \"version\": \"7.2.0\" }"
               ],
               "fail_on_missing_checksum": true,
               "fetch_sources": false,
@@ -2993,18 +2850,6 @@
                 "https://repo1.maven.org/maven2/org/apache/maven/maven-model-builder/3.9.6/maven-model-builder-3.9.6-sources.jar"
               ],
               "downloaded_file_path": "v1/org/apache/maven/maven-model-builder/3.9.6/maven-model-builder-3.9.6-sources.jar"
-            }
-          },
-          "net_sourceforge_pmd_pmd_ruby_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "17c360d914e766d09c09b99c12197d110866cdaa2f602a350bee22c56b5c313e",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-ruby/6.43.0/pmd-ruby-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-ruby/6.43.0/pmd-ruby-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-ruby/6.43.0/pmd-ruby-6.43.0.jar"
             }
           },
           "org_codehaus_plexus_plexus_utils_3_5_1": {
@@ -3038,6 +2883,18 @@
                 "https://repo1.maven.org/maven2/com/google/apis/google-api-services-storage/v1-rev20240311-2.0.0/google-api-services-storage-v1-rev20240311-2.0.0-sources.jar"
               ],
               "downloaded_file_path": "v1/com/google/apis/google-api-services-storage/v1-rev20240311-2.0.0/google-api-services-storage-v1-rev20240311-2.0.0-sources.jar"
+            }
+          },
+          "org_apache_httpcomponents_core5_httpcore5_h2_5_1_3": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "d0e78ba15aa8ebe77982b660ac4b09a95d6e035dbdbea762577dc1c8e2935807",
+              "urls": [
+                "https://repo1.maven.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar",
+                "https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar"
+              ],
+              "downloaded_file_path": "v1/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar"
             }
           },
           "io_grpc_grpc_protobuf_lite_jar_sources_1_62_2": {
@@ -3095,18 +2952,6 @@
               "downloaded_file_path": "v1/software/amazon/awssdk/sdk-core/2.25.23/sdk-core-2.25.23.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_plsql_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "fbd19ed5701aec3b685a941a463cb11f80c0e9ca0e686b9a6f9544aa39afbe70",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-plsql/6.43.0/pmd-plsql-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-plsql/6.43.0/pmd-plsql-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-plsql/6.43.0/pmd-plsql-6.43.0.jar"
-            }
-          },
           "software_amazon_awssdk_third_party_jackson_core_jar_sources_2_25_23": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -3116,18 +2961,6 @@
                 "https://repo1.maven.org/maven2/software/amazon/awssdk/third-party-jackson-core/2.25.23/third-party-jackson-core-2.25.23-sources.jar"
               ],
               "downloaded_file_path": "v1/software/amazon/awssdk/third-party-jackson-core/2.25.23/third-party-jackson-core-2.25.23-sources.jar"
-            }
-          },
-          "commons_io_commons_io_2_6": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "f877d304660ac2a142f3865badfc971dec7ed73c747c7f8d5d2f5139ca736513",
-              "urls": [
-                "https://repo1.maven.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.jar",
-                "https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.jar"
-              ],
-              "downloaded_file_path": "v1/commons-io/commons-io/2.6/commons-io-2.6.jar"
             }
           },
           "software_amazon_awssdk_http_client_spi_2_25_23": {
@@ -3185,6 +3018,18 @@
               "downloaded_file_path": "v1/org/apache/maven/maven-core/3.9.6/maven-core-3.9.6.jar"
             }
           },
+          "org_checkerframework_checker_qual_2_11_1": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "015224a4b1dc6de6da053273d4da7d39cfea20e63038169fc45ac0d1dc9c5938",
+              "urls": [
+                "https://repo1.maven.org/maven2/org/checkerframework/checker-qual/2.11.1/checker-qual-2.11.1.jar",
+                "https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.11.1/checker-qual-2.11.1.jar"
+              ],
+              "downloaded_file_path": "v1/org/checkerframework/checker-qual/2.11.1/checker-qual-2.11.1.jar"
+            }
+          },
           "commons_codec_commons_codec_1_16_1": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -3207,16 +3052,16 @@
               "downloaded_file_path": "v1/io/grpc/grpc-rls/1.62.2/grpc-rls-1.62.2.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_swift_6_43_0": {
+          "org_slf4j_slf4j_api_1_7_36": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "7229eab57d025a83565b8ef019eec3359e5de79aa568a4bc3df107c787962de3",
+              "sha256": "d3ef575e3e4979678dc01bf1dcce51021493b4d11fb7f1be8ad982877c16a1c0",
               "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-swift/6.43.0/pmd-swift-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-swift/6.43.0/pmd-swift-6.43.0.jar"
+                "https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar",
+                "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar"
               ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-swift/6.43.0/pmd-swift-6.43.0.jar"
+              "downloaded_file_path": "v1/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar"
             }
           },
           "io_grpc_grpc_protobuf_lite_1_62_2": {
@@ -3499,6 +3344,18 @@
               "downloaded_file_path": "v1/software/amazon/awssdk/crt-core/2.25.23/crt-core-2.25.23-sources.jar"
             }
           },
+          "org_antlr_antlr4_runtime_4_9_3": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "131a6594969bc4f321d652ea2a33bc0e378ca312685ef87791b2c60b29d01ea5",
+              "urls": [
+                "https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar",
+                "https://repo.maven.apache.org/maven2/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar"
+              ],
+              "downloaded_file_path": "v1/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar"
+            }
+          },
           "org_fusesource_jansi_jansi_2_4_1": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -3508,18 +3365,6 @@
                 "https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/2.4.1/jansi-2.4.1.jar"
               ],
               "downloaded_file_path": "v1/org/fusesource/jansi/jansi/2.4.1/jansi-2.4.1.jar"
-            }
-          },
-          "org_apache_commons_commons_lang3_3_8_1": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "dac807f65b07698ff39b1b07bfef3d87ae3fd46d91bbf8a2bc02b2a831616f68",
-              "urls": [
-                "https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar",
-                "https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar"
-              ],
-              "downloaded_file_path": "v1/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar"
             }
           },
           "software_amazon_awssdk_http_client_spi_jar_sources_2_25_23": {
@@ -3610,6 +3455,18 @@
               "downloaded_file_path": "v1/com/google/api/gax-httpjson/2.46.1/gax-httpjson-2.46.1.jar"
             }
           },
+          "net_sourceforge_pmd_pmd_java_7_2_0": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "05337a600d4d4c11dbf4f128cbd1161e9035ccc3a777d4cd8c0af2d83170431b",
+              "urls": [
+                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-java/7.2.0/pmd-java-7.2.0.jar",
+                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-java/7.2.0/pmd-java-7.2.0.jar"
+              ],
+              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-java/7.2.0/pmd-java-7.2.0.jar"
+            }
+          },
           "com_google_api_grpc_proto_google_cloud_storage_v2_2_36_1_alpha": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -3643,30 +3500,6 @@
               "downloaded_file_path": "v1/io/netty/netty-buffer/4.1.108.Final/netty-buffer-4.1.108.Final-sources.jar"
             }
           },
-          "net_sourceforge_pmd_pmd_groovy_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "a31abc76c819eb2031e3a5efa2b47a198ed354c1e48800be90c2ccf634dd869c",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-groovy/6.43.0/pmd-groovy-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-groovy/6.43.0/pmd-groovy-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-groovy/6.43.0/pmd-groovy-6.43.0.jar"
-            }
-          },
-          "net_sourceforge_pmd_pmd_fortran_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "357060bcf38d74e59ea9b787c22b30c3c5541eab8aafc580372ee0638bb837e7",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-fortran/6.43.0/pmd-fortran-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-fortran/6.43.0/pmd-fortran-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-fortran/6.43.0/pmd-fortran-6.43.0.jar"
-            }
-          },
           "software_amazon_awssdk_auth_jar_sources_2_25_23": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -3687,18 +3520,6 @@
                 "https://repo1.maven.org/maven2/com/google/apis/google-api-services-storage/v1-rev20240311-2.0.0/google-api-services-storage-v1-rev20240311-2.0.0.jar"
               ],
               "downloaded_file_path": "v1/com/google/apis/google-api-services-storage/v1-rev20240311-2.0.0/google-api-services-storage-v1-rev20240311-2.0.0.jar"
-            }
-          },
-          "net_sourceforge_pmd_pmd_matlab_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "98380af53f2f516ef2582315a85104de429546d50afbff3c04704af7f69dd065",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-matlab/6.43.0/pmd-matlab-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-matlab/6.43.0/pmd-matlab-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-matlab/6.43.0/pmd-matlab-6.43.0.jar"
             }
           },
           "software_amazon_awssdk_auth_2_25_23": {
@@ -3743,30 +3564,6 @@
                 "https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/3.9.6/maven-plugin-api-3.9.6-sources.jar"
               ],
               "downloaded_file_path": "v1/org/apache/maven/maven-plugin-api/3.9.6/maven-plugin-api-3.9.6-sources.jar"
-            }
-          },
-          "net_sourceforge_pmd_pmd_vm_6_43_0": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "b80f204c01960af66c831ccfca754b3db22ca15a9d59ea64114fb9afc1d48915",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-vm/6.43.0/pmd-vm-6.43.0.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-vm/6.43.0/pmd-vm-6.43.0.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-vm/6.43.0/pmd-vm-6.43.0.jar"
-            }
-          },
-          "net_sourceforge_saxon_saxon_9_1_0_8": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "sha256": "f3dcde81066c75db4ffca341d543555dbbbba7fff7ba6d1c2e7de1101dea394a",
-              "urls": [
-                "https://repo1.maven.org/maven2/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8.jar",
-                "https://repo.maven.apache.org/maven2/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8.jar"
-              ],
-              "downloaded_file_path": "v1/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8.jar"
             }
           },
           "javax_inject_javax_inject_1": {
@@ -3846,6 +3643,18 @@
               "downloaded_file_path": "v1/io/grpc/grpc-inprocess/1.62.2/grpc-inprocess-1.62.2.jar"
             }
           },
+          "commons_codec_commons_codec_1_15": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "b3e9f6d63a790109bf0d056611fbed1cf69055826defeb9894a71369d246ed63",
+              "urls": [
+                "https://repo1.maven.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15.jar",
+                "https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15.jar"
+              ],
+              "downloaded_file_path": "v1/commons-codec/commons-codec/1.15/commons-codec-1.15.jar"
+            }
+          },
           "com_google_protobuf_protobuf_java_util_jar_sources_3_25_2": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -3877,6 +3686,18 @@
                 "https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar"
               ],
               "downloaded_file_path": "v1/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar"
+            }
+          },
+          "org_xmlresolver_xmlresolver_5_2_2": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "efc92bd7ed32b3e57095e0b3e872051ccfbbdcc980831ef33e89e38161a85222",
+              "urls": [
+                "https://repo1.maven.org/maven2/org/xmlresolver/xmlresolver/5.2.2/xmlresolver-5.2.2.jar",
+                "https://repo.maven.apache.org/maven2/org/xmlresolver/xmlresolver/5.2.2/xmlresolver-5.2.2.jar"
+              ],
+              "downloaded_file_path": "v1/org/xmlresolver/xmlresolver/5.2.2/xmlresolver-5.2.2.jar"
             }
           },
           "software_amazon_awssdk_endpoints_spi_2_25_23": {

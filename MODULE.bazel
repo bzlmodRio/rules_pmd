@@ -11,8 +11,8 @@ maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
     name = "rules_pmd_dependencies",
     artifacts = [
-        "net.sourceforge.pmd:pmd-core:7.2.0",
-        "net.sourceforge.pmd:pmd-dist:7.2.0",
+        "net.sourceforge.pmd:pmd-java:7.2.0",
+        "net.sourceforge.pmd:pmd-cli:7.2.0",
     ],
     lock_file = "@rules_pmd//:rules_pmd_dependencies_install.json",
     repositories = [

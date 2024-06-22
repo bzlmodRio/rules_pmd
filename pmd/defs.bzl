@@ -8,6 +8,8 @@ def _impl(ctx):
 
     arguments = ctx.actions.args()
 
+    arguments.add("check")
+
     # Sources
 
     if len(ctx.files.srcs) != 0:
@@ -25,10 +27,6 @@ def _impl(ctx):
         inputs.extend(ctx.files.srcs_ignore)
 
     arguments.add("--encoding", ctx.attr.srcs_encoding)
-
-    # Language
-
-    arguments.add("-language", ctx.attr.srcs_language)
 
     if len(ctx.attr.srcs_language_version) != 0:
         arguments.add("-version", ctx.attr.srcs_language_version)
@@ -54,7 +52,7 @@ def _impl(ctx):
 
     # Remaining options
 
-    arguments.add("--fail-on-violation", ctx.attr.fail_on_violation)
+    arguments.add("--fail-on-violation={}".format(ctx.attr.fail_on_violation))
     arguments.add("--no-cache")
     arguments.add("--threads", ctx.attr.threads_count)
 
