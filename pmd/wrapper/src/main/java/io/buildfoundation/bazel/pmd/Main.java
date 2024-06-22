@@ -20,7 +20,7 @@ public final class Main {
         System.setProperty("picocli.disable.closures", "true");
         final CommandLine cli = new CommandLine(new PmdRootCommand())
                 .setCaseInsensitiveEnumValuesAllowed(true);
-        
+
         int result = cli.execute(args);
 
         if (result != 0) {
