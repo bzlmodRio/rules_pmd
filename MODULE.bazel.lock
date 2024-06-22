@@ -125,9 +125,9 @@
     "@@rules_jvm_external~//:extensions.bzl%maven": {
       "general": {
         "bzlTransitiveDigest": "Pq3YnJEflPAALx/UMykUnN3aA5bve0fNm/cuLvt/zvI=",
-        "usagesDigest": "oeldUiOK+qEYoIDkYJMRJbtYULqJq+Niu0AsubNtBPQ=",
+        "usagesDigest": "iUHf9llc7YQa099AZcJ16B1MFQo5GBBEKikKSqNiqi8=",
         "recordedFileInputs": {
-          "@@//rules_pmd_dependencies_install.json": "5662c6f937817948b5175a037c19cd217d210d344181d27ddbb7f29b30e5bf65",
+          "@@//rules_pmd_dependencies_install.json": "66c79c6afbddff21ed575c2647430c0058d95d53c57e05d2aeae333eb4ac396c",
           "@@rules_jvm_external~//rules_jvm_external_deps_install.json": "0bfbc915d9155df44d7a3b216e8f3c1fbcd110e358dd07637dc393583a5227e8"
         },
         "recordedDirentsInputs": {},
@@ -1391,8 +1391,8 @@
               ],
               "boms": [],
               "artifacts": [
-                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-java\", \"version\": \"7.2.0\" }",
-                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-cli\", \"version\": \"7.2.0\" }"
+                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-cli\", \"version\": \"7.2.0\" }",
+                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-java\", \"version\": \"7.2.0\" }"
               ],
               "fetch_sources": false,
               "fetch_javadoc": false,
@@ -1815,6 +1815,18 @@
               "downloaded_file_path": "v1/com/github/oowekyala/ooxml/nice-xml-messages/3.1/nice-xml-messages-3.1.jar"
             }
           },
+          "org_jline_jline_3_21_0": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "1e7d63a2bd1c26354ca1987e55469ea4327c4a3845c10d7a7790ca9729c49c02",
+              "urls": [
+                "https://repo1.maven.org/maven2/org/jline/jline/3.21.0/jline-3.21.0.jar",
+                "https://repo.maven.apache.org/maven2/org/jline/jline/3.21.0/jline-3.21.0.jar"
+              ],
+              "downloaded_file_path": "v1/org/jline/jline/3.21.0/jline-3.21.0.jar"
+            }
+          },
           "com_google_api_api_common_jar_sources_2_29_1": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -1989,6 +2001,18 @@
                 "https://repo1.maven.org/maven2/org/apache/maven/maven-settings/3.9.6/maven-settings-3.9.6-sources.jar"
               ],
               "downloaded_file_path": "v1/org/apache/maven/maven-settings/3.9.6/maven-settings-3.9.6-sources.jar"
+            }
+          },
+          "me_tongfei_progressbar_0_9_5": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "a1a086fa66f85c49bb3ca701a78cebb33647f367d4a5be8588c784d56272cc6e",
+              "urls": [
+                "https://repo1.maven.org/maven2/me/tongfei/progressbar/0.9.5/progressbar-0.9.5.jar",
+                "https://repo.maven.apache.org/maven2/me/tongfei/progressbar/0.9.5/progressbar-0.9.5.jar"
+              ],
+              "downloaded_file_path": "v1/me/tongfei/progressbar/0.9.5/progressbar-0.9.5.jar"
             }
           },
           "software_amazon_awssdk_s3_jar_sources_2_25_23": {
@@ -2265,6 +2289,18 @@
                 "https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar"
               ],
               "downloaded_file_path": "v1/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar"
+            }
+          },
+          "info_picocli_picocli_4_7_5": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "e83a906fb99b57091d1d68ac11f7c3d2518bd7a81a9c71b259e2c00d1564c8e8",
+              "urls": [
+                "https://repo1.maven.org/maven2/info/picocli/picocli/4.7.5/picocli-4.7.5.jar",
+                "https://repo.maven.apache.org/maven2/info/picocli/picocli/4.7.5/picocli-4.7.5.jar"
+              ],
+              "downloaded_file_path": "v1/info/picocli/picocli/4.7.5/picocli-4.7.5.jar"
             }
           },
           "io_grpc_grpc_googleapis_1_62_2": {
@@ -2818,8 +2854,8 @@
                 "{ \"repo_url\": \"https://repo.maven.apache.org/maven2/\" }"
               ],
               "artifacts": [
-                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-java\", \"version\": \"7.2.0\" }",
-                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-cli\", \"version\": \"7.2.0\" }"
+                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-cli\", \"version\": \"7.2.0\" }",
+                "{ \"group\": \"net.sourceforge.pmd\", \"artifact\": \"pmd-java\", \"version\": \"7.2.0\" }"
               ],
               "fail_on_missing_checksum": true,
               "fetch_sources": false,
@@ -3062,6 +3098,18 @@
                 "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar"
               ],
               "downloaded_file_path": "v1/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar"
+            }
+          },
+          "org_slf4j_slf4j_simple_1_7_36": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "2f39bed943d624dfa8f4102d0571283a10870b6aa36f197a8a506f147010c10f",
+              "urls": [
+                "https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar",
+                "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar"
+              ],
+              "downloaded_file_path": "v1/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar"
             }
           },
           "io_grpc_grpc_protobuf_lite_1_62_2": {
@@ -3322,6 +3370,18 @@
               "downloaded_file_path": "v1/org/apache/maven/maven-resolver-provider/3.9.6/maven-resolver-provider-3.9.6.jar"
             }
           },
+          "net_sourceforge_pmd_pmd_designer_7_2_0": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "d7bdecaf6ea499ed0bf2767d638657b36f286f20ac2cc3bc498c25a8a71f1c85",
+              "urls": [
+                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-designer/7.2.0/pmd-designer-7.2.0.jar",
+                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-designer/7.2.0/pmd-designer-7.2.0.jar"
+              ],
+              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-designer/7.2.0/pmd-designer-7.2.0.jar"
+            }
+          },
           "io_netty_netty_buffer_4_1_108_Final": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
@@ -3542,6 +3602,18 @@
                 "https://repo1.maven.org/maven2/io/grpc/grpc-xds/1.62.2/grpc-xds-1.62.2-sources.jar"
               ],
               "downloaded_file_path": "v1/io/grpc/grpc-xds/1.62.2/grpc-xds-1.62.2-sources.jar"
+            }
+          },
+          "net_sourceforge_pmd_pmd_cli_7_2_0": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "26746cdd1bbb9d1c52e49bc4c16683d84d1bf47da041d1268b5f049a49be9469",
+              "urls": [
+                "https://repo1.maven.org/maven2/net/sourceforge/pmd/pmd-cli/7.2.0/pmd-cli-7.2.0.jar",
+                "https://repo.maven.apache.org/maven2/net/sourceforge/pmd/pmd-cli/7.2.0/pmd-cli-7.2.0.jar"
+              ],
+              "downloaded_file_path": "v1/net/sourceforge/pmd/pmd-cli/7.2.0/pmd-cli-7.2.0.jar"
             }
           },
           "org_apache_maven_maven_resolver_provider_jar_sources_3_9_6": {
