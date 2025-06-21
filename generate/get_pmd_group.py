@@ -3,6 +3,7 @@ from bazelrio_gentool.generate_styleguide_rule import StyleguideGroup
 
 def get_pmd_group():
     version = "7.2.0"
+    patch = ".bcr1"
 
     group = StyleguideGroup(
         short_name="pmd",
@@ -11,6 +12,7 @@ def get_pmd_group():
         version=version,
         year=1,
         maven_url="",
+        patch=patch,
     )
     group.create_java_dependency(
         name="Placeholder",
